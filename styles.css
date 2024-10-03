@@ -1,0 +1,459 @@
+@font-face {
+    font-family: 'ADELIA';
+    src: url('fonts/ADELIA.woff2') format('woff2'),
+         url('fonts/ADELIA.woff') format('woff'),
+         url('fonts/ADELIA.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'JOSEPHSOPHIA';
+    src: url('fonts/JOSEPHSOPHIA.woff2') format('woff2'),
+         url('fonts/JOSEPHSOPHIA.woff') format('woff'),
+         url('fonts/JOSEPHSOPHIA.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HELLO';
+    src: url('fonts/HELLO.woff2') format('woff2'),
+         url('fonts/HELLO.woff') format('woff'),
+         url('fonts/HELLO.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CONGRATS CALLIGRAPHY';
+    src: url('fonts/CONGRATS CALLIGRAPHY.woff2') format('woff2'),
+         url('fonts/CONGRATS CALLIGRAPHY.otf') format('opentype'),
+         url('fonts/CONGRATS CALLIGRAPHY.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CATHALIA';
+    src: url('fonts/CATHALIA.woff2') format('woff2'),
+         url('fonts/CATHALIA.otf') format('opentype'),
+         url('fonts/CATHALIA.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HARBOUR SCRIPT - PERSONAL USE ONLY';
+    src: url('fonts/HARBOUR SCRIPT - PERSONAL USE ONLY.woff2') format('woff2'),
+         url('fonts/HARBOUR SCRIPT - PERSONAL USE ONLY.otf') format('opentype'),
+         url('fonts/HARBOUR SCRIPT - PERSONAL USE ONLY.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CHEROLINA';
+    src: url('fonts/CHEROLINA.woff2') format('woff2'),
+         url('fonts/CHEROLINA.otf') format('opentype'),
+         url('fonts/CHEROLINA.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SIXTY';
+    src: url('fonts/SIXTY.woff2') format('woff2'),
+         url('fonts/SIXTY.otf') format('opentype'),
+         url('fonts/SIXTY.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  
+  padding: 20px;
+  border-radius: 20px; /* Bordes más redondeados */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Sombra más suave */
+}
+h2 {
+  margin-top: 0;
+  color: #ff6b6b;
+  text-align: center; /* Centramos el título */
+  font-size: 24px;
+}
+
+
+
+/* Aplica estilos dentro de los selects */
+select.font-preview {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 10px solid #ccc;
+  width: 100%;
+  max-width: 300px;
+}
+
+select.font-preview option {
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.steps {
+  background-image: url(./img/fondo7.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex: 1;
+  padding: 10px;
+  background-color: #fafafa;
+  border-radius: 20px; /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  margin-right: 180px; /* Espacio entre las columnas */
+  height: 80vh;
+  max-height: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra el contenido verticalmente */
+  align-items: center; /* Centra el contenido horizontalmente */
+  text-align: center; /* Asegura que el contenido de texto esté centrado */
+  gap: 20px; /* Agrega espacio entre los elementos (más controlado) */
+}
+
+/* Elimina el margin: 0 auto que puede estar causando conflictos */
+.steps * {
+  max-width: 100%;
+  margin-bottom: 20px; /* Asegura espacio entre los elementos */
+}
+
+/* Opciones para elementos específicos */
+.steps select {
+  margin-bottom: 15px; /* Añadir más espacio debajo de los selects si es necesario */
+}
+
+.steps img {
+  margin-bottom: 15px; /* Espacio debajo de las imágenes */
+}
+
+select {
+  font-family: 'NombreDeTuFuente', Arial, sans-serif; /* Cambia la fuente de las opciones */
+  font-size: 16px; /* Cambia el tamaño del texto */
+  color: #333; /* Cambia el color del texto */
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  border: 2px solid #ddd;
+  appearance: none; /* Elimina el estilo predeterminado del navegador */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+   display: block;
+  margin-bottom: 10px; /* Espacio inferior entre cada select */
+  margin-right: 10px;  /* Espacio a la derecha entre los select en línea */
+  /* Aplica estilo al propio select */
+}
+
+
+/* Estilo específico para las opciones dentro del select (no siempre soportado en todos los navegadores) */
+select option {
+  font-family: 'NombreDeTuFuente', Arial, sans-serif;
+  font-size: 16px;
+  color: #333; /* Cambia el color del texto en las opciones */
+  background-color: #fff; /* Cambia el fondo del menú desplegable */
+}
+}
+
+
+.page {
+  display: none; /* Todas las páginas están ocultas por defecto */
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Centramos el título */
+  padding: 150px;
+  margin-bottom: 100px;
+  border: 1px solid #ddd;
+  border-radius: 50px; /* Bordes redondeados en los inputs */
+  font-size: 16px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Centra los botones horizontalmente */
+  gap: 40px; /* Espacio entre los botones */
+  margin-top: 20px;
+  padding: 10px
+}
+
+button {
+  background-color: #ff6b6b;
+  align-items: center;
+  
+  color: white;
+  border: none;
+  border-radius: 20px; /* Botones redondeados */
+   padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff4a4a; /* Efecto hover en botones */
+}
+
+
+
+.steps, .preview {
+  flex: 1; /* Ambos ocupan el mismo ancho proporcionalmente */
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 10px;
+  height: 80vh;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./img/fondo7.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px;
+  margin-bottom: 15px;
+  overflow: hidden; /* Oculta el desbordamiento */
+  text-overflow: ellipsis; /* Corta el texto si es muy largo */
+  white-space: normal; /* Permite que el texto se ajuste en varias líneas */
+  word-wrap: break-word; /* Corta las palabras largas si es necesario */
+  max-width: 100%; /* Asegura que el contenedor no se desborde */
+  box-sizing: border-box; /* Incluye el padding dentro del tamaño total */
+}
+
+
+
+
+/* Ajustamos las cajas de texto */
+#previewTitle, #previewDescription1, #previewDescription2 {
+  position: absolute;
+  padding: 5px;
+  cursor: move;
+  display: block; /* Asegúrate de que estén visibles */
+  word-wrap: break-word; /* Ajusta el texto dentro de la caja si es muy largo */
+  box-sizing: border-box; /* Asegúrate de que el padding no afecte el tamaño total */
+  max-width: 100%; /* Asegúrate de que no se desborde del contenedor */
+  white-space: normal; /* Permite que el texto se ajuste a varias líneas */
+}
+
+
+
+
+#imageLayers img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Mantén la proporción de la imagen */
+}
+
+
+
+/* Opciones de bordes y marcos */
+.frame-picker-container, .border-picker-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.frame-option {
+   width: 100px;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  border: 3px solid #ccc;
+  margin: 10px;
+}
+
+.border-option {
+  width: 100px;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  border: 3px solid #ccc;
+  margin: 10px;
+}
+
+canvas {
+  width: 300px;  /* Tamaño visible */
+  height: 450px; /* Tamaño visible */
+  image-rendering: auto; /* Usa 'crisp-edges' o 'pixelated' si trabajas con gráficos pixelados */
+}
+
+/* En JS al crear el canvas */
+canvas.width = 3000;  /* Tamaño real del canvas */
+canvas.height = 4500; /* Tamaño real del canvas */
+
+img {
+  width: 300px; /* Ajustar a un tamaño menor si la imagen original es más grande */
+  height: auto;
+
+  backface-visibility: hidden;
+  transform: translateZ(0); /* Activar aceleración por hardware */
+}
+
+/* Contenedor del lienzo */
+#canvasContainer {
+  width: 300px;   /* El tamaño original del lienzo */
+  height: 450px;  /* El tamaño original del lienzo */
+  margin: auto;
+  background-color: white;
+  border: 1px solid #ddd;
+  display: block;
+  transform: scale(1.0); /* Escala el lienzo un 50% más grande */
+  transform-origin: top left; /* Mantén el punto de origen de la transformación en la esquina superior izquierda */
+
+  overflow: hidden; /* Asegúrate de que nada se desborde del contenedor */
+
+
+}
+
+/* Capa de fondo */
+/* Aseguramos las capas correctamente */
+
+
+
+#backgroundImage, #extraImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen sin distorsionarla, recortando lo necesario */
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+/* Ajustamos las capas de imágenes */
+#imageLayers img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Imagen de fondo */
+#frameLayer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1; /* Capa más baja: Fondo */
+}
+
+
+/* Imagen de borde */
+#borderLayer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2; /* Capa superior: Borde */
+}
+
+
+#frameLayer, #borderLayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Mantiene la proporción de las imágenes */
+  background-size: contain;
+  background-position: center;
+  overflow: hidden; /* Oculta el contenido desbordante */
+}
+
+/* Asegurar que los textos estén siempre por encima */
+#previewTitle {
+  z-index: 3; /* Texto por encima del borde */
+}
+
+#previewDescription1 {
+  z-index: 4; /* Texto por encima del borde */
+}
+
+#previewDescription2 {
+  z-index: 5; /* Texto por encima del borde */
+}
+
+/* Ajustamos las miniaturas */
+.image-preview-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  background-color: white !important;
+}
+
+.thumbnail {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  border: 2px solid;
+  background-color: white !important;
+}
+
+.thumbnail:hover {
+  border: 2px solid #333;
+}
+
+.step-title {
+  margin-bottom: 20px;
+}
+
+.step-images img {
+  max-width: 100px; /* Ajusta el tamaño de las imágenes */
+  margin-top: 10px;
+  position: relative;
+  background-color: white !important;
+}
+
+.title-container {
+  background-color: #fff; /* O un fondo para resaltar el título */
+  padding: 10px;
+  z-index: 10;
+}
+
+
+
+
+/* Ocultar durante la exportación */
+.hide-during-export {
+  display: none;
+}

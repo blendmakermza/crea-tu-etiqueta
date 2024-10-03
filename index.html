@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>App de Diseño de etiquetas de vino BLENDMAKER</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Ventana de los pasos -->
+      <div class="steps">
+        <!-- Página 1 -->
+        <div class="page" id="page1">
+
+          <h2>Paso 1: Seleccionar imagen de fondo</h2>
+
+          <div class="frame-picker-container">
+            <div
+              class="frame-option"
+              data-frame="img/mod1.png"
+              id="frame1"
+              style="background-image: url('img/mod1.png')"
+            ></div>
+            <div
+              class="frame-option"
+              data-frame="img/mod2.png"
+              id="frame2"
+              style="background-image: url('img/mod2.png')"
+            ></div>
+            <div
+              class="frame-option"
+              data-frame="img/mod3.png"
+              id="frame3"
+              style="background-image: url('img/mod3.png')"
+            ></div>
+            <div
+              class="frame-option"
+              data-frame="img/mod4.png"
+              id="frame4"
+              style="background-image: url('img/mod4.png')"
+            ></div>
+            <div
+              class="frame-option"
+              data-frame="img/mod5.png"
+              id="frame5"
+              style="background-image: url('img/mod5.png')"
+            ></div>
+            <div
+              class="frame-option"
+              data-frame="img/mod6.svg"
+              id="frame6"
+              style="background-image: url('img/mod6.svg')"
+            ></div>
+            <div
+              class="frame-option"
+              data-frame="img/mod7.png"
+              id="frame7"
+              style="background-image: url('img/mod7.png')"
+            ></div>
+            <div
+              class="frame-option"
+              data-frame="img/mod8.png"
+              id="frame8"
+              style="background-image: url('img/mod8.png')"
+            ></div>
+            <div
+              class="frame-option"
+              data-frame="img/mod9.png"
+              id="frame9"
+              style="background-image: url('img/mod9.png')"
+            ></div>
+            <div
+              class="frame-option"
+              data-frame="img/mod10.png"
+              id="frame10"
+              style="background-image: url('img/mod10.png')"
+            ></div>
+            <div
+              class="frame-option"
+              data-frame="img/mod11.png"
+              id="frame11"
+              style="background-image: url('img/mod11.png')"
+            ></div>
+            <div
+              class="frame-option"
+              data-frame="img/mod12.png"
+              id="frame12"
+              style="background-image: url('img/mod12.png')"
+            ></div>
+            <div
+              class="frame-option"
+              data-frame="img/mod13.png"
+              id="frame13"
+              style="background-image: url('img/mod13.png')"
+            ></div>
+            <div
+              class="frame-option"
+              data-frame="img/mod14.png"
+              id="frame14"
+              style="background-image: url('img/mod14.png')"
+            ></div>
+            <div
+              class="frame-option"
+              data-frame="img/mod15.png"
+              id="frame15"
+              style="background-image: url('img/mod15.png')"
+            ></div>
+            <div
+              class="frame-option"
+              data-frame="img/mod16.png"
+              id="frame16"
+              style="background-image: url('img/mod16.png')"
+            ></div>
+            <div
+              class="frame-option"
+              data-frame="img/mod17.png"
+              id="frame17"
+              style="background-image: url('img/mod17.png')"
+            ></div>
+            <div
+              class="frame-option"
+              data-frame="img/mod18.png"
+              id="frame18"
+              style="background-image: url('img/mod18.png')"
+            ></div>
+            <div
+              class="frame-option"
+              data-frame="img/mod19.png"
+              id="frame19"
+              style="background-image: url('img/mod19.png')"
+            ></div>
+            <div
+              class="frame-option"
+              data-frame="img/mod20.png"
+              id="frame20"
+              style="background-image: url('img/mod20.png')"
+            ></div>
+          </div>
+              <button id="next1">Siguiente</button>
+        </div>
+
+        <!-- Página 2 -->
+        <div class="page" id="page2" style="display: none">
+
+
+          <h2>Paso 2: Seleccionar bordes o cenefas</h2>
+          <div class="border-picker-container">
+            <div
+              class="border-option"
+              data-border="img/frame1.png"
+              id="border1"
+              style="background-image: url('img/frame1.png')"
+            ></div>
+            <div
+              class="border-option"
+              data-border="img/frame2.png"
+              id="border2"
+              style="background-image: url('img/frame2.png')"
+            ></div>
+            <div
+              class="border-option"
+              data-border="img/frame3.png"
+              id="border3"
+              style="background-image: url('img/frame3.png')"
+            ></div>
+            <div
+              class="border-option"
+              data-border="img/frame4.png"
+              id="border4"
+              style="background-image: url('img/frame4.png')"
+            ></div>
+            <div
+              class="border-option"
+              data-border="img/frame5.png"
+              id="border5"
+              style="background-image: url('img/frame5.png')"
+            ></div>
+            <div
+              class="border-option"
+              data-border="img/frame6.png"
+              id="border6"
+              style="background-image: url('img/frame6.png')"
+            ></div>
+            <div
+              class="border-option"
+              data-border="img/frame7.png"
+              id="border7"
+              style="background-image: url('img/frame7.png')"
+            ></div>
+            <div
+              class="border-option"
+              data-border="img/frame8.png"
+              id="border8"
+              style="background-image: url('img/frame8.png')"
+            ></div>
+            <div
+              class="border-option"
+              data-border="img/frame9.png"
+              id="border9"
+              style="background-image: url('img/frame9.png')"
+            ></div>
+            <div
+              class="border-option"
+              data-border="img/frame10.png"
+              id="border10"
+              style="background-image: url('img/frame10.png')"
+            ></div>
+            <div
+              class="border-option"
+              data-border="img/frame11.png"
+              id="border11"
+              style="background-image: url('img/frame11.png')"
+            ></div>
+            <div
+              class="border-option"
+              data-border="img/frame12.png"
+              id="border12"
+              style="background-image: url('img/frame12.png')"
+            ></div>
+            <div
+              class="border-option"
+              data-border="img/frame13.png"
+              id="border13"
+              style="background-image: url('img/frame13.png')"
+            ></div>
+            <div
+              class="border-option"
+              data-border="img/frame14.png"
+              id="border14"
+              style="background-image: url('img/frame14.png')"
+            ></div>
+            <div
+              class="border-option"
+              data-border="img/frame15.png"
+              id="border15"
+              style="background-image: url('img/frame15.png')"
+            ></div>
+            <div
+              class="border-option"
+              data-border="img/frame16.png"
+              id="border16"
+              style="background-image: url('img/frame16.png')"
+            ></div>
+            <div
+              class="border-option"
+              data-border="img/frame17.png"
+              id="border17"
+              style="background-image: url('img/frame17.png')"
+            ></div>
+            <div
+              class="border-option"
+              data-border="img/frame18.png"
+              id="border18"
+              style="background-image: url('img/frame18.png')"
+            ></div>
+            <div
+              class="border-option"
+              data-border="img/frame19.png"
+              id="border19"
+              style="background-image: url('img/frame19.png')"
+            ></div>
+            <div
+              class="border-option"
+              data-border="img/frame20.png"
+              id="border20"
+              style="background-image: url('img/frame20.png')"
+            ></div>
+            <!-- Continúa con más opciones si es necesario -->
+          </div>
+
+          <button id="prev2">Anterior</button>
+          <button id="next2">Siguiente</button>
+        </div>
+
+        <!-- Página 3 -->
+        <div class="page" id="page3" style="display: none">
+
+          <h2>Paso 3: Escribe un título</h2>
+          <input
+            type="text"
+            id="titleInput"
+            placeholder="Escribe aquí el título"
+          />
+          <h3>Color del título</h3>
+          <input type="color" id="titleColorInput" value="#000000" />
+          <h3>Tamaño del título</h3>
+          <input
+            type="range"
+            id="titleSizeInput"
+            min="10"
+            max="150"
+            value="20"
+          />
+          <!-- Selector de fuente para el título -->
+          <h3>Fuente del título</h3>
+          <select id="titleFont" class="font-preview">
+            <option
+              value="'Arial', sans-serif"
+              style="font-family: 'Arial', sans-serif"
+            >
+              Arial
+            </option>
+            <option
+              value="'Times New Roman', serif"
+              style="font-family: 'Times New Roman', serif"
+            >
+              Times New Roman
+            </option>
+            <option
+              value="'Courier New', monospace"
+              style="font-family: 'Courier New', monospace"
+            >
+              Courier New
+            </option>
+            <option value="'ADELIA', sans-serif" style="font-family: 'ADELIA'">
+              ADELIA
+            </option>
+            <option
+              value="'JOSEPHSOPHIA', sans-serif"
+              style="font-family: 'JOSEPHSOPHIA'"
+            >
+              JOSEPHSOPHIA
+            </option>
+            <option
+              value="'CONGRATS CALLIGRAPHY', sans-serif"
+              style="font-family: 'CONGRATS CALLIGRAPHY'"
+            >
+              CONGRATS CALLIGRAPHY
+            </option>
+            <option
+              value="'CATHALIA', sans-serif"
+              style="font-family: 'CATHALIA'"
+            >
+              CATHALIA
+            </option>
+            <option
+              value="'HARBOUR SCRIPT', sans-serif"
+              style="font-family: 'HARBOUR SCRIPT'"
+            >
+              HARBOUR SCRIPT
+            </option>
+            <option
+              value="'CHEROLINA', sans-serif"
+              style="font-family: 'CHEROLINA'"
+            >
+              CHEROLINA
+            </option>
+            <option value="'SIXTY', sans-serif" style="font-family: 'SIXTY'">
+              SIXTY
+            </option>
+          </select>
+
+          <select id="mainTextAlign">
+            <option value="left">Izquierda</option>
+            <option value="center">Centrado</option>
+            <option value="right">Derecha</option>
+          </select>
+
+          <button id="prev3">Anterior</button>
+          <button id="next3">Siguiente</button>
+        </div>
+
+        <!-- Página 4 -->
+        <!-- Nueva Página: Selección de imagen de fondo -->
+        <div class="page" id="page4" style="display: none">
+
+          <h2>Paso 4: Escribe una descripción</h2>
+          <textarea
+            id="descriptionInput1"
+            placeholder="Escribe una descripción aquí"
+          ></textarea>
+          <h3>Color de la primera descripción</h3>
+          <input type="color" id="description1ColorInput" value="#000000" />
+          <h3>Tamaño de la primera descripción</h3>
+          <input
+            type="range"
+            id="description1SizeInput"
+            min="10"
+            max="150"
+            value="16"
+          />
+          <!-- Selector de fuente para la primera descripción -->
+          <h3>Fuente de la primera descripción</h3>
+          <select id="description1Font" class="font-preview">
+            <option
+              value="'Arial', sans-serif"
+              style="font-family: 'Arial', sans-serif"
+            >
+              Arial
+            </option>
+            <option
+              value="'Times New Roman', serif"
+              style="font-family: 'Times New Roman', serif"
+            >
+              Times New Roman
+            </option>
+            <option
+              value="'Courier New', monospace"
+              style="font-family: 'Courier New', monospace"
+            >
+              Courier New
+            </option>
+            <option value="'ADELIA', sans-serif" style="font-family: 'ADELIA'">
+              ADELIA
+            </option>
+            <option
+              value="'JOSEPHSOPHIA', sans-serif"
+              style="font-family: 'JOSEPHSOPHIA'"
+            >
+              JOSEPHSOPHIA
+            </option>
+            <option
+              value="'CONGRATS CALLIGRAPHY', sans-serif"
+              style="font-family: 'CONGRATS CALLIGRAPHY'"
+            >
+              CONGRATS CALLIGRAPHY
+            </option>
+            <option
+              value="'CATHALIA', sans-serif"
+              style="font-family: 'CATHALIA'"
+            >
+              CATHALIA
+            </option>
+            <option
+              value="'HARBOUR SCRIPT', sans-serif"
+              style="font-family: 'HARBOUR SCRIPT'"
+            >
+              HARBOUR SCRIPT
+            </option>
+            <option
+              value="'CHEROLINA', sans-serif"
+              style="font-family: 'CHEROLINA'"
+            >
+              CHEROLINA
+            </option>
+            <option value="'SIXTY', sans-serif" style="font-family: 'SIXTY'">
+              SIXTY
+            </option>
+          </select>
+          <select id="description1TextAlign">
+            <option value="left">Izquierda</option>
+            <option value="center">Centrado</option>
+            <option value="right">Derecha</option>
+          </select>
+
+          <button id="prev4">Anterior</button>
+          <button id="next4">Siguiente</button>
+        </div>
+
+        <!-- Página 5: Nueva selección de bordes o cenefas -->
+        <div class="page" id="page5" style="display: none">
+
+          <h2>Paso 5: Escribe año y corte</h2>
+          <textarea id="descriptionInput2" placeholder="año y corte"></textarea>
+          <h3>Color</h3>
+          <input type="color" id="description2ColorInput" value="#000000" />
+          <h3>Tamaño</h3>
+          <input
+            type="range"
+            id="description2SizeInput"
+            min="10"
+            max="150"
+            value="16"
+          />
+          <!-- Selector de fuente para la segunda descripción -->
+          <h3>Fuente</h3>
+          <select id="description2Font" class="font-preview">
+            <option
+              value="'Arial', sans-serif"
+              style="font-family: 'Arial', sans-serif"
+            >
+              Arial
+            </option>
+            <option
+              value="'Times New Roman', serif"
+              style="font-family: 'Times New Roman', serif"
+            >
+              Times New Roman
+            </option>
+            <option
+              value="'Courier New', monospace"
+              style="font-family: 'Courier New', monospace"
+            >
+              Courier New
+            </option>
+            <option value="'ADELIA', sans-serif" style="font-family: 'ADELIA'">
+              ADELIA
+            </option>
+            <option
+              value="'JOSEPHSOPHIA', sans-serif"
+              style="font-family: 'JOSEPHSOPHIA'"
+            >
+              JOSEPHSOPHIA
+            </option>
+            <option
+              value="'CONGRATS CALLIGRAPHY', sans-serif"
+              style="font-family: 'CONGRATS CALLIGRAPHY'"
+            >
+              CONGRATS CALLIGRAPHY
+            </option>
+            <option
+              value="'CATHALIA', sans-serif"
+              style="font-family: 'CATHALIA'"
+            >
+              CATHALIA
+            </option>
+            <option
+              value="'HARBOUR SCRIPT', sans-serif"
+              style="font-family: 'HARBOUR SCRIPT'"
+            >
+              HARBOUR SCRIPT
+            </option>
+            <option
+              value="'CHEROLINA', sans-serif"
+              style="font-family: 'CHEROLINA'"
+            >
+              CHEROLINA
+            </option>
+            <option value="'SIXTY', sans-serif" style="font-family: 'SIXTY'">
+              SIXTY
+            </option>
+          </select>
+          <select id="description2TextAlign">
+            <option value="left">Izquierda</option>
+            <option value="center">Centrado</option>
+            <option value="right">Derecha</option>
+          </select>
+
+                    <button id="prev5">Anterior</button>
+          <button id="next5">Siguiente</button>
+        </div>
+
+        <!-- Página 6 -->
+        <div class="page" id="page6" style="display: none">
+          <h2>Paso 6: Finalizar</h2>
+          <button id="prev6">Anterior</button>
+          <button id="exportBtn">Exportar Imagen</button>
+        </div>
+      </div>
+
+      <!-- Ventana de vista previa -->
+      <div class="preview">
+        <!-- Contenedor del lienzo -->
+
+        <!-- Contenedor del lienzo donde se aplican las imágenes -->
+        <!-- Contenedor del lienzo donde se aplican las imágenes -->
+        <div
+          id="canvasContainer"
+          style="
+            position: relative;
+            width: 300px;
+            height: 450px;
+            border: 1px solid #ddd;
+          "
+        >
+          <canvas
+            id="canvas"
+            width="3000"
+            height="4500"
+            style="width: 300px; height: 450px"
+          ></canvas>
+
+          <!-- Elementos superpuestos -->
+           <div
+            id="previewTitle"
+            style="
+              position: absolute;
+              left: 20px;
+              top: 50px;
+              cursor: move;
+              font-size: 20px;
+              display: inline-block;
+              z-index: 3;
+            "
+          ></div>
+          
+          <div
+            id="previewDescription1"
+            style="
+              position: absolute;
+              left: 0;
+              top: 100px;
+              cursor: move;
+              font-size: 16px;
+              display: inline-block;
+              z-index: 4;
+            "
+          ></div>
+          <div
+            id="previewDescription2"
+            style="
+              position: absolute;
+              left: 0;
+              top: 150px;
+              cursor: move;
+              font-size: 16px;
+              display: inline-block;
+              z-index: 5;
+            "
+          ></div> -->
+          <div id="previewTitle" style="position: absolute; left: 20; top: 50px; cursor: move; font-size: 20px; display: inline-block;"></div>
+          <div id="previewDescription1" style="position: absolute; left: 0; top: 100px; cursor: move; font-size: 16px; display: inline-block;"></div>
+          <div id="previewDescription2" style="position: absolute; left: 0; top: 150px; cursor: move; font-size: 16px; display: inline-block;"></div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+
+          <!-- El lienzo donde se debe aplicar la imagen seleccionada -->
+
+
+      </body>
+  <!-- Incluir html2canvas -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <!-- Incluir el script principal -->
+  <script src="scriptv2.js"></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker
+          .register("/service-worker.js")
+          .then(function (registration) {
+            console.log("ServiceWorker registrado con éxito:", registration);
+          })
+          .catch(function (error) {
+            console.error("Error al registrar el ServiceWorker:", error);
+          });
+      });
+    }
+  </script>
+</html>
